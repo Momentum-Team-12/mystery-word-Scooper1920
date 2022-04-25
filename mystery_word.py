@@ -9,7 +9,6 @@ words = data.split()
 sorrys =["That letter isn't in this word!", "Too bad, so sad, Try again!","Nope! Better luck next time!","Great guess...but not great enough.  Try again!","Nah, playah.  Try again","Nope, tough luck, kiddo. Try again!"]
 sorry = random.choice(sorrys)
 congratulations =["Winner, Winner, chicken dinner!","Woohoo!  You win!","Yasss!","Way to go!","Get a load a' you! You win!","Omg you are awesome at this!"]
-congrats =random.choice(congratulations)
 word=random.choice(words)
 spaces = ["_"]*len(word)
 #the above code matches the "_" string to each random word it pulls and applies
@@ -65,7 +64,7 @@ for i in range(0,9):
     if scoreCheck() == 1:
         print(random.choice(congratulations))
         break
-
+#computer chooses from my list of congratulatory remarks
     if (turns-i) ==0 and "_" in spaces:
         print("You lost, you bring dishonor to your family")
     
