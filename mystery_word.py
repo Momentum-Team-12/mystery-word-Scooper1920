@@ -63,7 +63,7 @@ for i in range(0,9):
         print(random.choice(sorrys) + " You have " + (str(turns -i) +" turns left!"))
     
     if scoreCheck() == 1:
-        print(congrats)
+        print(random.choice(congratulations))
         break
 
     if (turns-i) ==0 and "_" in spaces:
